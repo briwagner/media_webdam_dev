@@ -11,16 +11,21 @@
     "repositories": [
         {
             "type": "composer",
-	    "url": "https://packages.drupal.org/8"
-	}
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:mobomo/media_webdam.git"
+        }
     ],
     "require": {
-    	"composer/installers": "^1.2",
-	"drupal-composer/drupal-scaffold": "^2.2",
-	"drupal/console": "~1.0",
-	"drupal/core": "~8.0",
-	"drush/drush": "~8.0",
-	"drupal/media": "dev-1.x"
+        "composer/installers": "^1.2",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/console": "~1.0",
+        "drupal/core": "~8.0",
+        "drush/drush": "~8.0",
+        "drupal/media": "dev-1.x",
+        "drupal/media_webdam": "dev-8.x-1.x"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -28,16 +33,16 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-      "sort-packages": true
+        "sort-packages": true
     },
-     "scripts": {
+    "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
-     },
-     "extra": {
-	"installer-paths": {
+    },
+    "extra": {
+        "installer-paths": {
             "core": ["type:drupal-core"],
-	    "modules/contrib/{$name}": ["type:drupal-module"],
-	    "drush/contrib/{$name}": ["type:drupal/drush"]
-	}
-     }
+            "modules/contrib/{$name}": ["type:drupal-module"],
+            "drush/contrib/{$name}": ["type:drupal/drush"]
+        }
+    }
 }
