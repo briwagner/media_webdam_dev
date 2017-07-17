@@ -1,0 +1,42 @@
+{
+    "name": "mobomo/media_webdam_dev",
+    "description": "Dev environment for media_webdam",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Cameron Eagans",
+            "email": "me@cweagans.net"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+	    "url": "https://packages.drupal.org/8"
+	}
+    ],
+    "require": {
+    	"composer/installers": "^1.2",
+	"drupal-composer/drupal-scaffold": "^2.2",
+	"drupal/console": "~1.0",
+	"drupal/core": "~8.0",
+	"drush/drush": "~8.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+      "sort-packages": true
+    },
+     "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+     },
+     "extra": {
+	"installer-paths": {
+            "core": ["type:drupal-core"],
+	    "modules/contrib/{$name}": ["type:drupal-module"],
+	    "drush/contrib/{$name}": ["type:drupal/drush"]
+	}
+     }
+}

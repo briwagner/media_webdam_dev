@@ -1,0 +1,14 @@
+/vendor/
+.csslintrc
+.editorconfig
+.eslintignore
+.eslintrc.json
+.gitattributes
+.htaccess
+autoload.php
+core/
+index.php
+robots.txt
+sites/
+update.php
+web.config
