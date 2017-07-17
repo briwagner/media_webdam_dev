@@ -24,6 +24,7 @@
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
+        "drupal/admin_toolbar": "~1.0",
         "drupal/media": "dev-1.x",
         "drupal/media_webdam": "dev-8.x-1.x"
     },
