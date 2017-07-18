@@ -4,7 +4,19 @@ Quick 'n' dirty dev environment for media_webdam.
 
 ## Usage:
 
-1. Run `composer install`
-2. Point your local LAMP stack at this directory.
-3. Profit!
+### Install dependencies
+
+`make vendor`
+
+### Run unit tests
+
+`make test-unit`
+
+### See code coverage
+
+`make test-coverage-html && open coverage/index.html`
+
+### Run simpletests
+
+`make test-browser`
 
