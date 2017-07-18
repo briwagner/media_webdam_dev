@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="core/tests/bootstrap.php" colors="true">
+    <php>
+        <ini name="error_reporting" value="32767"/>
+        <ini name="memory_limit" value="-1"/>
+    </php>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>./modules/contrib/media_webdam/tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>./modules/contrib/media_webdam</directory>
+        </whitelist>
+    </filter>
+</phpunit>
