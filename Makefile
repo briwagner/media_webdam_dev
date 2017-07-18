@@ -33,6 +33,6 @@ travis-install-site:
 	./vendor/bin/drush en --yes media media_webdam simpletest
 
 travis-test-browser:
-	php ./core/scripts/run-tests.sh --types "Simpletest" --module 'media_webdam' --dburl "mysql://root:@localhost:3306/drupal_travis_db#simpletest"
+	php ./core/scripts/run-tests.sh --types "Simpletest" --module 'media_webdam' --dburl "mysql://root:@localhost:3306/drupal_travis_db#simpletest" --php `which php`
 
 
