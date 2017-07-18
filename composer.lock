@@ -2828,23 +2828,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mobomo/media_webdam.git",
-                "reference": "da62816c527c54a1c8e88a43baf6e8993ba18e8e"
+                "reference": "9ea9ef1e75d62e8d44784028ed71bce6e9968b08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mobomo/media_webdam/zipball/da62816c527c54a1c8e88a43baf6e8993ba18e8e",
-                "reference": "da62816c527c54a1c8e88a43baf6e8993ba18e8e",
+                "url": "https://api.github.com/repos/mobomo/media_webdam/zipball/9ea9ef1e75d62e8d44784028ed71bce6e9968b08",
+                "reference": "9ea9ef1e75d62e8d44784028ed71bce6e9968b08",
                 "shasum": ""
             },
             "require": {
                 "cweagans/php-webdam-client": "dev-master"
-            },
-            "require-dev": {
-                "drupal/coder": "^8.2",
-                "jakub-onderka/php-parallel-lint": "^0.9.2",
-                "ocramius/proxy-manager": "~1.0",
-                "phpro/grumphp": "^0.11.6",
-                "squizlabs/php_codesniffer": "^2.0"
             },
             "type": "drupal-module",
             "license": [
@@ -2871,7 +2864,7 @@
                 "source": "https://github.com/mobomo/media_webdam/tree/8.x-1.x",
                 "issues": "https://github.com/mobomo/media_webdam/issues"
             },
-            "time": "2017-07-17 23:24:44"
+            "time": "2017-07-18 01:19:37"
         },
         {
             "name": "drupal/slick",
