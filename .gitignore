@@ -13,3 +13,5 @@ sites/
 update.php
 web.config
 modules/
+coverage/
+coverage.xml
