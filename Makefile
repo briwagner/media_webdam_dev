@@ -1,5 +1,4 @@
 SHELL=/bin/bash
-ESCAPED_PWD := $(shell echo ${PWD} | sed 's/\//\\\//g')
 
 vendor:
 	composer install
