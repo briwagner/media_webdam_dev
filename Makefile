@@ -19,7 +19,7 @@ report-coverage:
 	rm coveralls_upload.json coverage.xml
 
 travis-install-site:
-	./vendor/bin/drush si --db-url=mysql://root:@127.0.0.1:3306/drupal_travis_db --site-name="media_webdam"
-	./vendor/bin/drush en media media_webdam simpletest
+	./vendor/bin/drush si --yes --db-url=mysql://root:@127.0.0.1:3306/drupal_travis_db --site-name="media_webdam"
+	./vendor/bin/drush en --yes media media_webdam simpletest
 
 
