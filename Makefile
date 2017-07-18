@@ -3,10 +3,20 @@ SHELL=/bin/bash
 vendor:
 	composer install
 
-test-unit: vendor
+libraries:
+	mkdir -p libraries
+	@echo "Downloading Dropzone JS"
+	wget https://github.com/enyo/dropzone/archive/v4.3.0.tar.gz
+	tar xzf v4.3.0.tar.gz
+	rm v4.3.0.tar.gz
+	mv dropzone-4.3.0 libraries/dropzone
+
+dependencies: vendor libraries
+
+test-unit: dependencies
 	./vendor/bin/phpunit
 
-test-browser: vendor
+test-browser: dependencies
 	php ./core/scripts/run-tests.sh --types "Simpletest" --module 'media_webdam'
 
 test-coverage-html:

@@ -6,7 +6,7 @@ Quick 'n' dirty dev environment for media_webdam.
 
 ### Install dependencies
 
-`make vendor`
+`make dependencies`
 
 ### Run unit tests
 
